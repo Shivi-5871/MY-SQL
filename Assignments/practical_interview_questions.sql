@@ -79,7 +79,7 @@ alter table employees add column email varchar(100) null;
 -- 07. Change the size of a column
 -- The phone column currently allows 15 characters. Use ALTER TABLE to increase it to VARCHAR(20), while keeping
 -- the existing phone values. The column should still allow NULL.
-alter table employees modify phone varchar(20) unique;
+alter table employees modify column phone varchar(20) unique;
 describe employees;
 
 
